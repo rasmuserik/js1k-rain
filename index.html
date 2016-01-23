@@ -5,7 +5,10 @@
 		<meta charset="utf-8" />
 	</head>
 	<body>
-		<canvas id="c"></canvas>
+		<canvas id="c" style="position:absolute;top:0;left:0;width:100%;height:100%"></canvas>
+    <p style="position:absolute;top:0;left:0;font-weight:bold">
+    Visual effect implemented with very little code (intended to be used in js1k).
+    </p>
 		<script>
 			var b = document.body;
 			var c = document.getElementsByTagName('canvas')[0];
@@ -16,8 +19,8 @@
 // start of submission //
 c.width = 256;
 c.height= 256;
-c.style.height= "95%";
-c.style.width= "95%";
+//c.style.height= "95%";
+//c.style.width= "95%";
 d = a.getImageData(0,0,c.width,c.height);
 e = d.data;
 
